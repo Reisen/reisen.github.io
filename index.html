@@ -18,6 +18,8 @@
             }
 
             @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+            @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+            @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 
             #container {
                 width: 800px;
@@ -29,6 +31,8 @@
                 background-image: url('https://i.imgur.com/1KjHx6G.png');
                 background-position: bottom;
                 animation: spin 60s linear infinite;
+                -webkit-animation:spin 60s linear infinite;
+                -moz-animation:spin 60s linear infinite;
             }
 
                 #container img {
@@ -56,6 +60,8 @@
                     text-align: center;
                     color: #FF99CC;
                     animation: spin 60s linear infinite;
+                    -webkit-animation: spin 60s linear infinite;
+                    -moz-animation: spin 60s linear infinite;
                     animation-direction: reverse;
                     text-shadow:
                         2px 0px 20px red,
